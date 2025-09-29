@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Note</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <h1>Create a New Note</h1>
+
+  <!-- Form to submit a note -->
+  <form action="/create" method="POST">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content" rows="5" cols="30"></textarea><br><br>
+
+    <button type="submit">Add Note</button>
+  </form>
+
+  <br>
+  <a href="/notes">View All Notes</a>
+</body>
+</html>
